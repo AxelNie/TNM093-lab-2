@@ -1,0 +1,55 @@
+div.sp-container, div.pc-container, div.info-container {
+    height : 44vh;
+    overflow-x:scroll;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.foreground path {
+  fill: none;
+  stroke-width:0.4px;
+  stroke: darkturquoise;
+}
+
+.active .label:not(.inactive) {
+  font-weight: bold;
+  stroke-width: 3px;
+}
+
+.foreground path.inactive {
+  stroke: #ccc;
+  stroke-opacity: .1;
+  stroke-width: 0.7px;
+}
+
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  fill:black;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.font-size{
+  font-size: 12px
+}
+
+.dotSelected {
+  opacity: 1 !important;
+  stroke: black;
+  stroke-width: 2px;
+  fill: deeppink !important;
+}
